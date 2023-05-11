@@ -4,10 +4,13 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useMediaQuery } from 'react-responsive';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+
+  const isLgScreen = useMediaQuery({ minDeviceWidth: 992 });
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={isLgScreen ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}>
       <Tilt option={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <div onClick={() => window.open(source_code_link, "_blank")} className="w-full h-full flex justify-center items-center cursor-pointer">
@@ -35,10 +38,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 
 const Works = () => {
+
+  const isLgScreen = useMediaQuery({ minDeviceWidth: 992 });
+
   return (
 
-    <div className="pb-20 lg:pb-44">
-      <motion.div variants={textVariant()}>
+    <div className="lg:pb-44">
+      <motion.div variants={isLgScreen ? textVariant() : {}}>
         <p className={styles.sectionSubText}>
           Mon Travail
         </p>
@@ -48,7 +54,7 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]" >
+        <motion.p variants={isLgScreen ? fadeIn("", "", 0.1, 1) : {}} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]" >
           Mes projets mettent en valeur mes compétences en matière de conception, de développement et de résolution de problèmes.
         </motion.p>
       </div>

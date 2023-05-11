@@ -5,7 +5,7 @@ import thib from '../assets/thib.jpeg';
 
 const Hero = () => {
   return (
-    <section className=" relative w-full h-screen mx-auto">
+    <section className=" relative w-full lg:h-screen h-[100vh] mx-auto">
 
       <div className={`${styles.paddingX} absolute inset-0 top-[140px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}>
 
@@ -25,8 +25,9 @@ const Hero = () => {
 
 
       </div>
-
+      <div className="relative w-[45%] left-[32%] lg:h-[40%] h-[20%] lg:top-[45vh] top-[60vh]">
       <ComputersCanvas />
+      </div>
     </section>
   )
 }
