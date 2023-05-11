@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
         <Link
-          to="/"
+          to="/portfolio/"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");

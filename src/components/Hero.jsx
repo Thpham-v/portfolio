@@ -25,7 +25,7 @@ const Hero = () => {
 
 
       </div>
-      <div className="relative w-[45%] left-[32%] lg:h-[40%] h-[20%] lg:top-[45vh] top-[60vh]">
+      <div className="relative w-[45%] left-[10%] lg:h-[40%] h-[20%] lg:top-[45vh] top-[60vh]">
       <ComputersCanvas />
       </div>
     </section>
