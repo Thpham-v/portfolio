@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const Tech = () => {
   return (
-    <div className="lg:p-24 lg:pb-50">
+    <div className=" lg:p-24 lg:pb-50">
       <motion.div variants={textVariant()} className="flex flex-col items-center">
         <p className={styles.sectionSubText}>
           À propos
@@ -34,9 +34,9 @@ const Tech = () => {
 
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-12">
 
-        {technologies.map((technoLogy) => (
-          <div className="w-28 h-28" key={technoLogy.name}>
-            <BallCanvas icon={technoLogy.icon} />
+        {technologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <BallCanvas icon={technology.icon} />
           </div>
         ))}
 
