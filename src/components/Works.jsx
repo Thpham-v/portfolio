@@ -43,7 +43,7 @@ const Works = () => {
 
   return (
 
-    <div className="lg:pb-44">
+    <div className="lg:pb-44 ">
       <motion.div variants={isLgScreen ? textVariant() : {}}>
         <p className={styles.sectionSubText}>
           Mon Travail

@@ -10,7 +10,7 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import c from "./tech/c.svg";
 import cpp from "./tech/cpp.svg";
 
