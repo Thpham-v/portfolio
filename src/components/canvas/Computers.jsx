@@ -11,7 +11,7 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity={0.25} groundColor="black" />
       <directionalLight position={[-2, 10, 0]} intensity={1} />
       <pointLight intensity={1} />
-      <primitive object={computer.scene} scale={isMobile ? 16 : 26} position={[0, -4, 0]} rotation={[-0.02, -3.96, 0.1]} />
+      <primitive object={computer.scene} scale={isMobile ? 18 : 22} position={[0, -2, 0]} rotation={[-0.02, -3.96, 0.1]} />
     </mesh>
   )
 }
@@ -20,7 +20,7 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1600px)');
+    const mediaQuery = window.matchMedia('(max-width: 1400px)');
 
     setIsMobile(mediaQuery.matches);
 

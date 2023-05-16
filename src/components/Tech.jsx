@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const Tech = () => {
   return (
-    <div className=" lg:p-24 lg:pb-50">
+    <div className=" lg:p-24 lg:pb-10">
       <motion.div variants={textVariant()} className="flex flex-col items-center">
         <p className={styles.sectionSubText}>
           À propos
