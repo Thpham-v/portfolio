@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div className="relative flex flex-col">
+        <div className="relative flex flex-col max-sm:mb-[200px]">
           <div className="flex max-sm:flex-col-reverse max-sm:flex justify-center items-center w-full">
 
             <div>
