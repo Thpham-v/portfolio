@@ -11,7 +11,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
   const isLgScreen = useMediaQuery({ minDeviceWidth: 992 });
   return (
     <motion.div variants={isLgScreen ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}>
-      <Tilt option={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+      <Tilt option={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[600px]">
         <div className="relative w-full h-[230px]">
           <div onClick={() => window.open(source_code_link, "_blank")} className="w-full h-full flex justify-center items-center cursor-pointer">
             <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
@@ -19,7 +19,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 flex-grow">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
@@ -45,11 +45,8 @@ const Works = () => {
 
     <div className="lg:pb-44 ">
       <motion.div variants={isLgScreen ? textVariant() : {}}>
-        <p className={styles.sectionSubText}>
-          Mon Travail
-        </p>
         <h2 className={styles.sectionHeadText}>
-          Projets
+          Mes projets
         </h2>
       </motion.div>
 
@@ -59,7 +56,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7 ">
+      <div className="mt-20 flex flex-wrap gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project}
           />

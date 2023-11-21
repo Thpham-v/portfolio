@@ -19,7 +19,7 @@ const Hero = () => {
 
             <div>
               <h1 className={`${styles.heroHeadText}`}>Je m'appelle <span className="text-[#915eff]">Thibault</span></h1>
-              <p className={`${styles.heroSubText} mt-4 text-white-100`}>Voici un portfolio de mes projets.</p>
+              <p className={`${styles.heroSubText} mt-4 text-white-100`}>Voici le portfolio de mes projets.</p>
             </div>
 
             <img src={thib} alt="thib" className="w-[50%]  img_profile_style max-sm:mr-10" />

@@ -17,11 +17,11 @@ import {
 export const navLinks = [
 	{
 		id: "about",
-		title: "À propos",
+		title: "Qui suis-je",
 	},
 	{
 		id: "work",
-		title: "Mes Projets",
+		title: "Mes projets",
 	},
 	{
 		id: "contact",
