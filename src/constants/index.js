@@ -34,11 +34,11 @@ export const navLinks = [
 
 const technologies = [
 	{
-		name: "HTML 5",
+		name: "HTML",
 		icon: html,
 	},
 	{
-		name: "CSS 3",
+		name: "CSS",
 		icon: css,
 	},
 	{
@@ -58,31 +58,31 @@ const technologies = [
 		icon: nextjs,
 	},
 	{
-		name: "c",
+		name: "C",
 		icon: c,
 	},
 	{
-		name: "cpp",
+		name: "C++",
 		icon: cpp,
 	},
 	{
-		name: "redux",
+		name: "Redux",
 		icon: redux,
 	},
 	{
-		name: "docker",
+		name: "Docker",
 		icon: docker,
 	},
 	{
-		name: "node js",
+		name: "Node JS",
 		icon: nodejs,
 	},
 	{
-		name: "postgresql",
+		name: "PostgreSQL",
 		icon: postgresql,
 	},
 	{
-		name: "prisma",
+		name: "Prisma",
 		icon: prisma,
 	},
 ];
