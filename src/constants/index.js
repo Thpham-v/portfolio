@@ -3,15 +3,18 @@ import {
 	html,
 	css,
 	reactjs,
-	tailwind,
-	git,
-	figma,
 	docker,
-	threejs,
 	c,
 	cpp,
-	drapeau,
-	concierge,
+	yassoua,
+	amoneta,
+	eteos,
+	nodejs,
+	postgresql,
+	nextjs,
+	redux,
+	typescript,
+	prisma,
 } from "../assets";
 
 export const navLinks = [
@@ -43,16 +46,16 @@ const technologies = [
 		icon: javascript,
 	},
 	{
+		name: "TypeScript",
+		icon: typescript,
+	},
+	{
 		name: "React JS",
 		icon: reactjs,
 	},
 	{
-		name: "Tailwind CSS",
-		icon: tailwind,
-	},
-	{
-		name: "Three JS",
-		icon: threejs,
+		name: "Next JS",
+		icon: nextjs,
 	},
 	{
 		name: "c",
@@ -63,22 +66,142 @@ const technologies = [
 		icon: cpp,
 	},
 	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "figma",
-		icon: figma,
+		name: "redux",
+		icon: redux,
 	},
 	{
 		name: "docker",
 		icon: docker,
+	},
+	{
+		name: "node js",
+		icon: nodejs,
+	},
+	{
+		name: "postgresql",
+		icon: postgresql,
+	},
+	{
+		name: "prisma",
+		icon: prisma,
 	},
 ];
 
 
 
 const projects = [
+	{
+		name: "Eteos",
+		description:
+			"Développement d'une solution SaaS permettant de certifier l'authenticité des produits tout au long de leur cycle de vie. Conception de l'API, gestion de la base de données, et collaboration avec une équipe Agile. Coordination avec des équipes externes pour l'intégration mobile. Mise en production sur Clever Cloud.",
+		tags: [
+			{
+				name: "NX",
+				color: "blue-text-gradient"
+			},
+			{
+				name: "Typescript",
+				color: "green-text-gradient"
+			},
+			{
+				name: "NodeJS",
+				color: "orange-neon-gradient"
+			},
+			{
+				name: "ExpressJS",
+				color: "magenta-neon-gradient"
+			},
+			{
+				name: "PostgreSQL",
+				color: "aqua-neon-gradient"
+			},
+			{
+				name: "Prisma",
+				color: "teal-neon-gradient"
+			},
+			{
+				name: "NextJS",
+				color: "lime-neon-gradient"
+			},
+			{
+				name: "React",
+				color: "yellow-neon-gradient"
+			},
+			{
+				name: "TailwindCSS",
+				color: "pink-text-gradient"
+			},
+
+		],
+		image: eteos,
+		source_code_link: "https://moncertificat.fr/login",
+	},
+	{
+		name: "Yassoua",
+		description:
+			"Création d'un site e-commerce Shopify from scratch avec une personnalisation avancée du thème pour répondre aux besoins spécifiques du client. Optimisation de l'interface utilisateur (UI) et amélioration de l'expérience utilisateur (UX). Intégration de fonctionnalités telles que la création d'un système de wishlist pour les produits et l’ajout rapide au panier.",
+		tags: [
+			{
+				name: "HTML",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "CSS",
+				color: "green-text-gradient",
+			},
+			{
+				name: "Javascript",
+				color: "yellow-neon-gradient",
+			},
+			{
+				name: "Liquid",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Shopify API",
+				color: "cyan-neon-gradient",
+			},
+			{
+				name: "UI/UX",
+				color: "teal-neon-gradient",
+			},
+			{
+				name: "Responsive Design",
+				color: "orange-neon-gradient",
+			},
+		],
+		image: yassoua,
+		source_code_link: "https://yassoua.com/",
+	},
+	{
+		name: "Amoneta",
+		description:
+			"Conception, développement et déploiement d'un site WordPress pour Amoneta Diagnostics. Ce projet a inclus la création d'une interface utilisateur intuitive et la mise en place de fonctionnalités personnalisées pour répondre aux besoins spécifiques de l'entreprise.",
+		tags: [
+			{
+				name: "HTML",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "CSS",
+				color: "green-text-gradient",
+			},
+			{
+				name: "WordPress",
+				color: "yellow-neon-gradient",
+			},
+			{
+				name: "UI/UX",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "Déploiement",
+				color: "orange-neon-gradient",
+			},
+		],
+		image: amoneta,
+		source_code_link: "https://amoneta-diagnostics.com/",
+	},
 	{
 		name: "FDF",
 		description:
@@ -127,52 +250,6 @@ const projects = [
 		source_code_link: "https://github.com/Thpham-v/cub3d",
 	},
 	{
-		name: "Philosophers",
-		description:
-			"Philosophers est un projet de développement de programme qui a pour objectif de simuler l'exécution concurrente d'un groupe de philosophes. Les philosophes passent leur temps à réfléchir et à manger à une table avec des couverts. Le but du projet est de gérer la synchronisation entre les philosophes(gestion de multi threads) pour éviter les conflits d'accès aux ressources (couverts) et éviter les problèmes tels que les décès de faim et la boucle d'attente.",
-		tags: [
-			{
-				name: "C",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "multithreads",
-				color: "green-text-gradient",
-			},
-			{
-				name: "42",
-				color: "pink-text-gradient",
-			},
-		],
-		image: "https://42.fr/wp-content/uploads/2021/08/42.jpg",
-		source_code_link: "https://github.com/Thpham-v/philosophers",
-	},
-	{
-		name: "Site Drapeau",
-		description:
-			"Site de pays qui permet aux utilisateurs de découvrir les drapeaux du monde entier et les informations sur leurs populations. Avec des options de tri par continent ou par ordre croissant / décroissant. Récupération et utilisation d'une API publique pour afficher les drapeaux ou d'autres données.",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "api",
-				color: "green-text-gradient",
-			},
-			{
-				name: "scss",
-				color: "text-yellow-200",
-			},
-			{
-				name: "javascript",
-				color: "pink-text-gradient",
-			},
-		],
-		image: drapeau,
-		source_code_link: "https://thpham-v.github.io/drapeau/#/",
-	},
-	{
 		name: "Inception",
 		description:
 			"Le projet inception consiste à mettre en place une mini-infrastructure de différents services en utilisant Docker et Docker Compose.",
@@ -192,31 +269,6 @@ const projects = [
 		],
 		image: "https://jolicode.com/media/original/2013/10/homepage-docker-logo.png",
 		source_code_link: "https://github.com/Thpham-v/Inception",
-	},
-	{
-		name: "Site Conciergerie",
-		description:
-			"Maquette de la page d'accueil que j'ai créée en React JS pour une petite entreprise qui ouvrira bientôt ses portes",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "html",
-				color: "green-text-gradient",
-			},
-			{
-				name: "scss",
-				color: "text-yellow-200",
-			},
-			{
-				name: "javascript",
-				color: "pink-text-gradient",
-			},
-		],
-		image: concierge,
-		source_code_link: "https://www.linkedin.com/feed/update/urn:li:activity:7054118853282295808/",
 	},
 ];
 

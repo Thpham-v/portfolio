@@ -66,7 +66,7 @@ const Contact = () => {
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <div className="relative flex flex-col justify-center items-center md:flex-row gap-6 bottom-6">
             <a className="flex items-center gap-1 hover:text-sky-600 bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl" href="https://github.com/Thpham-v" target="_blank">Github <span className="material-symbols-outlined text-sky-600">link</span></a>
-            <a className="flex items-center gap-1 hover:text-sky-600 bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl" href="https://www.linkedin.com/in/thibault-pham-van-6363b6253/" target="_blank">Linkedin <span className="material-symbols-outlined text-sky-600">link</span></a>
+            <a className="flex items-center gap-1 hover:text-sky-600 bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl" href="https://www.linkedin.com/in/thibault-pham-van/" target="_blank">Linkedin <span className="material-symbols-outlined text-sky-600">link</span></a>
             <a className="flex items-center gap-1 hover:text-sky-600 bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl" href="./thpham-v.pdf" target="_blank">Curriculum <span className="material-symbols-outlined text-sky-600">link</span></a>
           </div>
           <label className="flex flex-col">
