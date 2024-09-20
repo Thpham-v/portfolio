@@ -226,7 +226,7 @@ const projects = [
 	{
 		name: "Cub3d",
 		description:
-			"Au cours de ce projet, nous avons du développer un jeu en 3D en utilisant les fonctionnalités de la bibliothèque miniLibX, notamment les fonctions de dessin de lignes, de tracé de formes géométriques et de gestion de la mémoire. Il est également nécessaire de mettre en place des algorithmes pour gérer les mouvements et les interactions du joueur avec l'environnement et donc de comprendre le fonctionnement du raycasting.",
+			"Au cours de ce projet, nous avons du développer un jeu en 3D en utilisant notamment les fonctions de dessin de lignes, de tracé de formes géométriques et de gestion de la mémoire. Il est également nécessaire de mettre en place des algorithmes pour gérer les mouvements et les interactions du joueur avec l'environnement et donc de comprendre le fonctionnement du raycasting.",
 		tags: [
 			{
 				name: "C",
